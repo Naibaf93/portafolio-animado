@@ -1,0 +1,23 @@
+{
+  "name": "portafolio-animado-tailwind",
+  "version": "1.0.0",
+  "description": "portafolio utilizando tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailDev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naibaf93/portafolio-animado.git"
+  },
+  "author": "Fabian Huertas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naibaf93/portafolio-animado/issues"
+  },
+  "homepage": "https://github.com/Naibaf93/portafolio-animado#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}
