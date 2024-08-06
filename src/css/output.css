@@ -623,12 +623,12 @@ video {
   justify-content: flex-end;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .justify-items-center {
   justify-items: center;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -686,6 +686,16 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-\[clip-path\] {
+  transition-property: clip-path;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .clip-circle-0{
   clip-path: circle(0% at top right);
 }
@@ -696,4 +706,34 @@ video {
 
 .peer\/menu:checked ~ .peer-checked\/menu\:clip-circle-full{
   clip-path: circle(150% at top right);
+}
+
+@media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:clip-circle-full{
+    clip-path: circle(150% at top right);
+  }
 }
